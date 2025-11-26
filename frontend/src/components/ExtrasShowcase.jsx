@@ -90,14 +90,14 @@ const ExtrasShowcase = () => {
   );
 
   const renderSection = (title, items, columns = 1) => (
-    <div style={{ marginBottom: "3rem" }}>
+    <div style={{ marginBottom: "2.5rem" }}>
       <h3
         style={{
           fontFamily: "var(--font-serif)",
-          fontSize: "1.75rem",
+          fontSize: "clamp(1.25rem, 4vw, 1.75rem)",
           fontWeight: "700",
           color: "var(--color-yellow)",
-          marginBottom: "1.5rem",
+          marginBottom: "1.25rem",
           paddingBottom: "0.75rem",
           borderBottom: "2px solid rgba(255, 215, 0, 0.3)",
         }}
@@ -107,7 +107,7 @@ const ExtrasShowcase = () => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: `repeat(auto-fill, minmax(${columns === 1 ? "300px" : "250px"}, 1fr))`,
+          gridTemplateColumns: `repeat(auto-fill, minmax(min(100%, ${columns === 1 ? "280px" : "220px"}), 1fr))`,
           gap: "1rem",
         }}
       >
