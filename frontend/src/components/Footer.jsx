@@ -21,17 +21,17 @@ const Footer = () => {
         >
           {/* Brand Section */}
           <div>
-            <h3
-              style={{
-                fontFamily: "var(--font-serif)",
-                fontSize: "2rem",
-                fontWeight: "700",
-                marginBottom: "1rem",
-                color: "var(--color-yellow)",
-              }}
-            >
-              Al Mandi House
-            </h3>
+            <div style={{ marginBottom: "1rem" }}>
+              <img
+                src="https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/75ers0g1_ChatGPT%20Image%20Aug%2027%2C%202025%2C%2007_48_44%20PM.png"
+                alt="Mandi House Logo"
+                style={{
+                  height: "80px",
+                  width: "auto",
+                  filter: "brightness(0) invert(1)",
+                }}
+              />
+            </div>
             <p
               style={{
                 color: "rgba(255, 255, 255, 0.7)",
