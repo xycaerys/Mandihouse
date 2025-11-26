@@ -1,0 +1,193 @@
+import React from "react";
+import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer
+      style={{
+        background: "var(--color-black)",
+        color: "var(--color-white)",
+        padding: "4rem 2rem 2rem",
+      }}
+    >
+      <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "3rem",
+            marginBottom: "3rem",
+          }}
+        >
+          {/* Brand Section */}
+          <div>
+            <h3
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "2rem",
+                fontWeight: "700",
+                marginBottom: "1rem",
+              }}
+            >
+              Al Mandi House
+            </h3>
+            <p
+              style={{
+                color: "rgba(255, 255, 255, 0.7)",
+                lineHeight: "1.7",
+                marginBottom: "1.5rem",
+              }}
+            >
+              Bringing authentic Yemeni Mandi to your table with love, tradition, and the finest
+              ingredients.
+            </p>
+            <div style={{ display: "flex", gap: "1rem" }}>
+              <a
+                href="#"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "background 0.2s ease",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-primary)")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
+                }
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href="#"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "background 0.2s ease",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-primary)")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
+                }
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href="#"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "background 0.2s ease",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-primary)")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
+                }
+              >
+                <Twitter size={20} />
+              </a>
+              <a
+                href="#"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  background: "rgba(255, 255, 255, 0.1)",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "background 0.2s ease",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-primary)")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
+                }
+              >
+                <Mail size={20} />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "1.25rem",
+                fontWeight: "700",
+                marginBottom: "1.5rem",
+              }}
+            >
+              Quick Links
+            </h4>
+            <ul style={{ listStyle: "none", padding: 0 }}>
+              {["Home", "Menu", "About", "Gallery", "Contact"].map((link) => (
+                <li key={link} style={{ marginBottom: "0.75rem" }}>
+                  <a
+                    href={`#${link.toLowerCase()}`}
+                    style={{
+                      color: "rgba(255, 255, 255, 0.7)",
+                      textDecoration: "none",
+                      transition: "color 0.2s ease",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.color = "var(--color-primary)")}
+                    onMouseLeave={(e) => (e.target.style.color = "rgba(255, 255, 255, 0.7)")}
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Opening Hours */}
+          <div>
+            <h4
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "1.25rem",
+                fontWeight: "700",
+                marginBottom: "1.5rem",
+              }}
+            >
+              Opening Hours
+            </h4>
+            <div style={{ color: "rgba(255, 255, 255, 0.7)", lineHeight: "1.8" }}>
+              <p>Monday - Friday: 11:00 AM - 11:00 PM</p>
+              <p>Saturday - Sunday: 10:00 AM - 12:00 AM</p>
+              <p style={{ marginTop: "1rem" }}>Phone: +1 (555) 123-4567</p>
+              <p>Email: hello@almandihouse.com</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div
+          style={{
+            borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+            paddingTop: "2rem",
+            textAlign: "center",
+            color: "rgba(255, 255, 255, 0.6)",
+          }}
+        >
+          <p>© 2024 Al Mandi House. All rights reserved. Crafted with love and tradition.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
