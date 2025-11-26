@@ -44,7 +44,7 @@ const ExtrasShowcase = () => {
       key={index}
       style={{
         background: "rgba(255, 255, 255, 0.05)",
-        padding: "1.25rem 1.5rem",
+        padding: "1rem 1.25rem",
         borderRadius: "var(--border-radius)",
         border: "1px solid rgba(255, 215, 0, 0.2)",
         display: "flex",
@@ -52,6 +52,7 @@ const ExtrasShowcase = () => {
         alignItems: "center",
         transition: "all 0.3s ease",
         cursor: "pointer",
+        minHeight: "60px",
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.borderColor = "var(--color-yellow)";
@@ -64,27 +65,28 @@ const ExtrasShowcase = () => {
         e.currentTarget.style.background = "rgba(255, 255, 255, 0.05)";
       }}
     >
-      <div style={{ flex: 1 }}>
-        <span style={{ color: "var(--color-white)", fontWeight: "600", fontSize: "1rem" }}>
+      <div style={{ flex: 1, paddingRight: "0.75rem" }}>
+        <span style={{ color: "var(--color-white)", fontWeight: "600", fontSize: "clamp(0.875rem, 2.5vw, 1rem)" }}>
           {item.name}
         </span>
         {item.note && (
-          <div style={{ fontSize: "0.75rem", color: "rgba(255, 215, 0, 0.8)", marginTop: "0.25rem" }}>
+          <div style={{ fontSize: "0.6875rem", color: "rgba(255, 215, 0, 0.8)", marginTop: "0.25rem", lineHeight: "1.3" }}>
             {item.note}
           </div>
         )}
       </div>
-      <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexShrink: 0 }}>
         <span
           style={{
             color: "var(--color-yellow)",
             fontWeight: "700",
-            fontSize: "1.25rem",
+            fontSize: "clamp(1rem, 3vw, 1.25rem)",
+            whiteSpace: "nowrap",
           }}
         >
           ${item.price}
         </span>
-        <Plus size={20} color="var(--color-yellow)" />
+        <Plus size={18} color="var(--color-yellow)" />
       </div>
     </div>
   );
