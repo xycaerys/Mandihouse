@@ -14,8 +14,8 @@ const features = [
   },
   {
     icon: <Award size={32} />,
-    title: "Award Winning",
-    description: "Recognized for excellence in Middle Eastern cuisine",
+    title: "Generous Portions",
+    description: "Hearty servings that satisfy every appetite with quality and value",
   },
   {
     icon: <Users size={32} />,
