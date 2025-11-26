@@ -78,6 +78,8 @@ const Hero = () => {
           maxWidth: "1400px",
           width: "100%",
           textAlign: "center",
+          position: "relative",
+          zIndex: 2,
         }}
       >
         <div
