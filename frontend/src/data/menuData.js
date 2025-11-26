@@ -46,7 +46,7 @@ export const menuCategories = {
       name: "Mutton Mandi Plate", 
       price: 35, 
       description: "Premium mutton cuts with traditional rice preparation. Serves 1-2 persons",
-      image: "https://images.pexels.com/photos/6275095/pexels-photo-6275095.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/z6uuwu9i_mutton%20mandi%20plate.png",
       rating: 4.9
     },
     { 
