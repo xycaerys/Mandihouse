@@ -29,10 +29,10 @@ const Header = () => {
         left: 0,
         right: 0,
         zIndex: 1000,
-        background: scrolled ? "rgba(236, 236, 117, 0.95)" : "transparent",
+        background: scrolled ? "rgba(26, 58, 26, 0.95)" : "transparent",
         backdropFilter: scrolled ? "blur(10px)" : "none",
         transition: "all 0.3s ease",
-        borderBottom: scrolled ? "1px solid rgba(15, 23, 42, 0.1)" : "none",
+        borderBottom: scrolled ? "1px solid rgba(255, 215, 0, 0.2)" : "none",
       }}
     >
       <div
@@ -50,7 +50,7 @@ const Header = () => {
             fontFamily: "var(--font-serif)",
             fontSize: "2rem",
             fontWeight: "700",
-            color: "var(--color-black)",
+            color: "var(--color-yellow)",
             cursor: "pointer",
           }}
           onClick={() => scrollToSection("hero")}
@@ -70,60 +70,60 @@ const Header = () => {
           <a
             onClick={() => scrollToSection("menu")}
             style={{
-              color: "var(--color-black)",
+              color: "var(--color-white)",
               textDecoration: "none",
               fontSize: "1rem",
               fontWeight: "500",
               cursor: "pointer",
               transition: "color 0.2s ease",
             }}
-            onMouseEnter={(e) => (e.target.style.color = "var(--color-green)")}
-            onMouseLeave={(e) => (e.target.style.color = "var(--color-black)")}
+            onMouseEnter={(e) => (e.target.style.color = "var(--color-yellow)")}
+            onMouseLeave={(e) => (e.target.style.color = "var(--color-white)")}
           >
             Menu
           </a>
           <a
             onClick={() => scrollToSection("about")}
             style={{
-              color: "var(--color-black)",
+              color: "var(--color-white)",
               textDecoration: "none",
               fontSize: "1rem",
               fontWeight: "500",
               cursor: "pointer",
               transition: "color 0.2s ease",
             }}
-            onMouseEnter={(e) => (e.target.style.color = "var(--color-green)")}
-            onMouseLeave={(e) => (e.target.style.color = "var(--color-black)")}
+            onMouseEnter={(e) => (e.target.style.color = "var(--color-yellow)")}
+            onMouseLeave={(e) => (e.target.style.color = "var(--color-white)")}
           >
             About
           </a>
           <a
             onClick={() => scrollToSection("gallery")}
             style={{
-              color: "var(--color-black)",
+              color: "var(--color-white)",
               textDecoration: "none",
               fontSize: "1rem",
               fontWeight: "500",
               cursor: "pointer",
               transition: "color 0.2s ease",
             }}
-            onMouseEnter={(e) => (e.target.style.color = "var(--color-green)")}
-            onMouseLeave={(e) => (e.target.style.color = "var(--color-black)")}
+            onMouseEnter={(e) => (e.target.style.color = "var(--color-yellow)")}
+            onMouseLeave={(e) => (e.target.style.color = "var(--color-white)")}
           >
             Gallery
           </a>
           <a
             onClick={() => scrollToSection("contact")}
             style={{
-              color: "var(--color-black)",
+              color: "var(--color-white)",
               textDecoration: "none",
               fontSize: "1rem",
               fontWeight: "500",
               cursor: "pointer",
               transition: "color 0.2s ease",
             }}
-            onMouseEnter={(e) => (e.target.style.color = "var(--color-green)")}
-            onMouseLeave={(e) => (e.target.style.color = "var(--color-black)")}
+            onMouseEnter={(e) => (e.target.style.color = "var(--color-yellow)")}
+            onMouseLeave={(e) => (e.target.style.color = "var(--color-white)")}
           >
             Contact
           </a>
@@ -143,9 +143,9 @@ const Header = () => {
           className="mobile-menu-btn"
         >
           {mobileMenuOpen ? (
-            <X size={28} color="var(--color-black)" />
+            <X size={28} color="var(--color-yellow)" />
           ) : (
-            <MenuIcon size={28} color="var(--color-black)" />
+            <MenuIcon size={28} color="var(--color-yellow)" />
           )}
         </button>
       </div>
@@ -156,7 +156,7 @@ const Header = () => {
           style={{
             background: "var(--color-primary)",
             padding: "1.5rem 2rem",
-            borderTop: "1px solid rgba(15, 23, 42, 0.1)",
+            borderTop: "1px solid rgba(255, 215, 0, 0.2)",
           }}
           className="mobile-menu"
         >
@@ -164,7 +164,7 @@ const Header = () => {
             <a
               onClick={() => scrollToSection("menu")}
               style={{
-                color: "var(--color-black)",
+                color: "var(--color-white)",
                 textDecoration: "none",
                 fontSize: "1.125rem",
                 fontWeight: "500",
@@ -176,7 +176,7 @@ const Header = () => {
             <a
               onClick={() => scrollToSection("about")}
               style={{
-                color: "var(--color-black)",
+                color: "var(--color-white)",
                 textDecoration: "none",
                 fontSize: "1.125rem",
                 fontWeight: "500",
@@ -188,7 +188,7 @@ const Header = () => {
             <a
               onClick={() => scrollToSection("gallery")}
               style={{
-                color: "var(--color-black)",
+                color: "var(--color-white)",
                 textDecoration: "none",
                 fontSize: "1.125rem",
                 fontWeight: "500",
@@ -200,7 +200,7 @@ const Header = () => {
             <a
               onClick={() => scrollToSection("contact")}
               style={{
-                color: "var(--color-black)",
+                color: "var(--color-white)",
                 textDecoration: "none",
                 fontSize: "1.125rem",
                 fontWeight: "500",

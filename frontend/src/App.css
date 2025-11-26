@@ -1,7 +1,10 @@
 :root {
-  --color-primary: #ECEC75;
-  --color-primary-dark: #e6e67c;
-  --color-green: #4a7c59;
+  --color-primary: #1a3a1a;
+  --color-primary-dark: #0f2310;
+  --color-yellow: #ffd700;
+  --color-yellow-dark: #ccac00;
+  --color-green: #2d5a2d;
+  --color-green-light: #3d7a3d;
   --color-black: #0f172a;
   --color-gray-50: #f8fafc;
   --color-gray-600: #64748b;
@@ -35,31 +38,31 @@
 body {
   font-family: var(--font-sans);
   background: var(--color-primary);
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .btn-primary {
-  background: var(--color-black);
-  color: white;
+  background: var(--color-yellow);
+  color: var(--color-black);
   border: none;
   border-radius: var(--border-radius);
   padding: 12px 32px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .btn-primary:hover {
-  background: var(--color-gray-900);
+  background: var(--color-yellow-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.3);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--color-black);
-  border: 2px solid var(--color-black);
+  color: var(--color-yellow);
+  border: 2px solid var(--color-yellow);
   border-radius: var(--border-radius);
   padding: 10px 30px;
   font-weight: 600;
@@ -69,7 +72,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background: var(--color-black);
-  color: white;
+  background: var(--color-yellow);
+  color: var(--color-black);
   transform: translateY(-2px);
 }
