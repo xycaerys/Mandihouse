@@ -11,14 +11,14 @@ export const menuCategories = {
       name: "Mutton Mandi Single", 
       price: 25, 
       description: "Succulent mutton slow-cooked with traditional Yemeni spices and saffron rice. Serves 1 person",
-      image: "https://images.pexels.com/photos/18698231/pexels-photo-18698231.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/0fqv7l7p_mutton%20mandi%20single.png",
       rating: 4.8
     },
     { 
       name: "Fish Mandi Single", 
       price: 24, 
       description: "Fresh fish fillet grilled with authentic spices, served on seasoned rice. Serves 1 person",
-      image: "https://images.pexels.com/photos/17139829/pexels-photo-17139829.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/auatjf66_fish%20mandi%20single.png",
       rating: 4.7
     },
     { 
@@ -53,21 +53,21 @@ export const menuCategories = {
       name: "Fish Mandi Plate", 
       price: 32, 
       description: "Fresh fish with aromatic rice and special sauce. Serves 1-2 persons",
-      image: "https://images.pexels.com/photos/17139829/pexels-photo-17139829.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/6uu59c54_fish%20mandi%20plate.png",
       rating: 4.7
     },
     { 
       name: "Chicken Tikka Mandi Plate", 
       price: 32, 
       description: "Chicken tikka with generous rice portion. Serves 1-2 persons",
-      image: "https://images.unsplash.com/photo-1603496987674-79600a000f55?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxtYW5kaSUyMHJpY2V8ZW58MHx8fHwxNzY0MTcxNTM4fDA&ixlib=rb-4.1.0&q=85",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/cq4g1lca_chicken%20tikka%20mandi%20plate.png",
       rating: 4.8
     },
     { 
       name: "Mixed Mandi Plate", 
       price: 55, 
       description: "Chicken and mutton combination platter. Serves 2-3 persons",
-      image: "https://images.pexels.com/photos/6275095/pexels-photo-6275095.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/02lqxet8_mixed%20mandi%20plate.png",
       rating: 5.0
     },
     { 
@@ -88,7 +88,7 @@ export const menuCategories = {
       name: "Mixed Mandi Family Plate", 
       price: 110, 
       description: "Grand platter with chicken and mutton. Serves 5-6 persons",
-      image: "https://images.pexels.com/photos/6275095/pexels-photo-6275095.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/02lqxet8_mixed%20mandi%20plate.png",
       rating: 5.0
     },
   ],
