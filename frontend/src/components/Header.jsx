@@ -54,12 +54,11 @@ const Header = () => {
           onClick={() => scrollToSection("hero")}
         >
           <img
-            src="https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/75ers0g1_ChatGPT%20Image%20Aug%2027%2C%202025%2C%2007_48_44%20PM.png"
+            src="https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/qsgj8c65_you__1_-removebg-preview.png"
             alt="Mandi House Logo"
             style={{
-              height: "60px",
+              height: "70px",
               width: "auto",
-              mixBlendMode: "multiply",
             }}
           />
         </div>
