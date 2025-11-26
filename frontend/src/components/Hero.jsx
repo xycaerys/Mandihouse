@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const backgroundImages = [
+    "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/rn932f8f_chicken%20mandi%20single.png",
+    "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/0fqv7l7p_mutton%20mandi%20single.png",
+    "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/ync1n7ud_mixed%20mandi%20single.png",
+    "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/wdy93in5_chicken%20mandi%20plate.png",
+    "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/02lqxet8_mixed%20mandi%20plate.png",
+    "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/d6zro627_Full%20chicken.png",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToMenu = () => {
     const element = document.getElementById("menu");
     if (element) {
@@ -19,9 +38,41 @@ const Hero = () => {
         justifyContent: "center",
         position: "relative",
         padding: "8rem 2rem 4rem",
-        background: "linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%)",
+        overflow: "hidden",
       }}
     >
+      {/* Background Slideshow */}
+      {backgroundImages.map((image, index) => (
+        <div
+          key={index}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: index === currentImageIndex ? 0.15 : 0,
+            transition: "opacity 1.5s ease-in-out",
+            zIndex: 0,
+          }}
+        />
+      ))}
+
+      {/* Overlay */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          background: "linear-gradient(135deg, rgba(26, 58, 26, 0.95) 0%, rgba(15, 35, 16, 0.95) 100%)",
+          zIndex: 1,
+        }}
+      />
       <div
         style={{
           maxWidth: "1400px",
