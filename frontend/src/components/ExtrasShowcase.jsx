@@ -177,7 +177,7 @@ const ExtrasShowcase = () => {
           style={{
             background: "var(--color-green)",
             borderRadius: "var(--border-radius-lg)",
-            padding: "3rem",
+            padding: "clamp(1.5rem, 5vw, 3rem)",
             border: "2px solid var(--color-yellow)",
             boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)",
           }}
