@@ -19,7 +19,7 @@ const Hero = () => {
         justifyContent: "center",
         position: "relative",
         padding: "8rem 2rem 4rem",
-        background: "var(--color-primary)",
+        background: "linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%)",
       }}
     >
       <div
@@ -34,7 +34,7 @@ const Hero = () => {
             marginBottom: "1rem",
             fontSize: "1.125rem",
             fontWeight: "500",
-            color: "var(--color-green)",
+            color: "var(--color-yellow)",
             letterSpacing: "0.1em",
             textTransform: "uppercase",
           }}
@@ -47,28 +47,27 @@ const Hero = () => {
             fontFamily: "var(--font-serif)",
             fontSize: "clamp(3rem, 8vw, 5.5rem)",
             fontWeight: "700",
-            color: "var(--color-black)",
+            color: "var(--color-white)",
             marginBottom: "1.5rem",
             lineHeight: "1.1",
           }}
         >
-          Experience the Finest
+          Welcome to
           <br />
-          Traditional Mandi
+          <span style={{ color: "var(--color-yellow)" }}>Mandi House</span>
         </h1>
 
         <p
           style={{
             fontSize: "1.25rem",
-            color: "var(--color-gray-900)",
+            color: "rgba(255, 255, 255, 0.9)",
             maxWidth: "700px",
             margin: "0 auto 3rem",
             lineHeight: "1.7",
           }}
         >
-          Indulge in the rich flavors of Arabia with our expertly crafted Mandi dishes,
-          prepared with the finest ingredients and traditional recipes passed down through
-          generations.
+          Savor the rich traditions of Arabian cuisine with our signature Mandi dishes. Slow-cooked
+          to perfection, infused with aromatic spices that transport you to the heart of Yemen.
         </p>
 
         <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap" }}>
@@ -97,15 +96,15 @@ const Hero = () => {
             style={{
               width: "60px",
               height: "2px",
-              background: "var(--color-black)",
-              opacity: "0.3",
+              background: "var(--color-yellow)",
+              opacity: "0.5",
             }}
           />
           <div
             style={{
               width: "8px",
               height: "8px",
-              background: "var(--color-green)",
+              background: "var(--color-yellow)",
               borderRadius: "50%",
               transform: "translateY(-3px)",
             }}
@@ -114,8 +113,8 @@ const Hero = () => {
             style={{
               width: "60px",
               height: "2px",
-              background: "var(--color-black)",
-              opacity: "0.3",
+              background: "var(--color-yellow)",
+              opacity: "0.5",
             }}
           />
         </div>
@@ -133,7 +132,7 @@ const Hero = () => {
           animation: "bounce 2s infinite",
         }}
       >
-        <ChevronDown size={32} color="var(--color-black)" opacity={0.5} />
+        <ChevronDown size={32} color="var(--color-yellow)" opacity={0.7} />
       </div>
 
       <style>{`
