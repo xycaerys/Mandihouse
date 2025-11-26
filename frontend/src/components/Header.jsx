@@ -187,9 +187,6 @@ const Header = () => {
             >
               Contact
             </a>
-            <button className="btn-primary" style={{ marginTop: "1rem" }}>
-              Order Now
-            </button>
           </nav>
         </div>
       )}
