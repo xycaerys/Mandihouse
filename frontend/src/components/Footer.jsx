@@ -27,6 +27,7 @@ const Footer = () => {
                 fontSize: "2rem",
                 fontWeight: "700",
                 marginBottom: "1rem",
+                color: "var(--color-yellow)",
               }}
             >
               Al Mandi House
@@ -47,17 +48,22 @@ const Footer = () => {
                 style={{
                   width: "40px",
                   height: "40px",
-                  background: "rgba(255, 255, 255, 0.1)",
+                  background: "rgba(255, 215, 0, 0.1)",
                   borderRadius: "50%",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   transition: "background 0.2s ease",
+                  color: "var(--color-yellow)",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-primary)")}
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
-                }
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "var(--color-yellow)";
+                  e.currentTarget.style.color = "var(--color-black)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255, 215, 0, 0.1)";
+                  e.currentTarget.style.color = "var(--color-yellow)";
+                }}
               >
                 <Facebook size={20} />
               </a>
@@ -66,17 +72,22 @@ const Footer = () => {
                 style={{
                   width: "40px",
                   height: "40px",
-                  background: "rgba(255, 255, 255, 0.1)",
+                  background: "rgba(255, 215, 0, 0.1)",
                   borderRadius: "50%",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   transition: "background 0.2s ease",
+                  color: "var(--color-yellow)",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-primary)")}
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
-                }
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "var(--color-yellow)";
+                  e.currentTarget.style.color = "var(--color-black)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255, 215, 0, 0.1)";
+                  e.currentTarget.style.color = "var(--color-yellow)";
+                }}
               >
                 <Instagram size={20} />
               </a>
@@ -85,17 +96,22 @@ const Footer = () => {
                 style={{
                   width: "40px",
                   height: "40px",
-                  background: "rgba(255, 255, 255, 0.1)",
+                  background: "rgba(255, 215, 0, 0.1)",
                   borderRadius: "50%",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   transition: "background 0.2s ease",
+                  color: "var(--color-yellow)",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-primary)")}
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
-                }
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "var(--color-yellow)";
+                  e.currentTarget.style.color = "var(--color-black)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255, 215, 0, 0.1)";
+                  e.currentTarget.style.color = "var(--color-yellow)";
+                }}
               >
                 <Twitter size={20} />
               </a>
@@ -104,17 +120,22 @@ const Footer = () => {
                 style={{
                   width: "40px",
                   height: "40px",
-                  background: "rgba(255, 255, 255, 0.1)",
+                  background: "rgba(255, 215, 0, 0.1)",
                   borderRadius: "50%",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   transition: "background 0.2s ease",
+                  color: "var(--color-yellow)",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-primary)")}
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)")
-                }
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "var(--color-yellow)";
+                  e.currentTarget.style.color = "var(--color-black)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255, 215, 0, 0.1)";
+                  e.currentTarget.style.color = "var(--color-yellow)";
+                }}
               >
                 <Mail size={20} />
               </a>
@@ -129,6 +150,7 @@ const Footer = () => {
                 fontSize: "1.25rem",
                 fontWeight: "700",
                 marginBottom: "1.5rem",
+                color: "var(--color-yellow)",
               }}
             >
               Quick Links
@@ -143,7 +165,7 @@ const Footer = () => {
                       textDecoration: "none",
                       transition: "color 0.2s ease",
                     }}
-                    onMouseEnter={(e) => (e.target.style.color = "var(--color-primary)")}
+                    onMouseEnter={(e) => (e.target.style.color = "var(--color-yellow)")}
                     onMouseLeave={(e) => (e.target.style.color = "rgba(255, 255, 255, 0.7)")}
                   >
                     {link}
@@ -161,6 +183,7 @@ const Footer = () => {
                 fontSize: "1.25rem",
                 fontWeight: "700",
                 marginBottom: "1.5rem",
+                color: "var(--color-yellow)",
               }}
             >
               Opening Hours
@@ -177,7 +200,7 @@ const Footer = () => {
         {/* Copyright */}
         <div
           style={{
-            borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+            borderTop: "1px solid rgba(255, 215, 0, 0.2)",
             paddingTop: "2rem",
             textAlign: "center",
             color: "rgba(255, 255, 255, 0.6)",
