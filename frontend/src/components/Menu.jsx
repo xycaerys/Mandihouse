@@ -140,7 +140,7 @@ const Menu = () => {
                 style={{
                   background: "var(--color-green)",
                   borderRadius: "var(--border-radius-lg)",
-                  padding: "2rem",
+                  overflow: "hidden",
                   border: "1px solid rgba(255, 215, 0, 0.2)",
                   boxShadow: "var(--shadow-md)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease",
@@ -157,59 +157,112 @@ const Menu = () => {
                   e.currentTarget.style.borderColor = "rgba(255, 215, 0, 0.2)";
                 }}
               >
+                {/* Image Section */}
                 <div
                   style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "flex-start",
-                    marginBottom: "1rem",
+                    position: "relative",
+                    height: "250px",
+                    overflow: "hidden",
                   }}
                 >
-                  <h3
+                  <img
+                    src={item.image}
+                    alt={item.name}
                     style={{
-                      fontFamily: "var(--font-serif)",
-                      fontSize: "1.5rem",
-                      fontWeight: "700",
-                      color: "var(--color-white)",
-                      flex: 1,
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      transition: "transform 0.5s ease",
                     }}
-                  >
-                    {item.name}
-                  </h3>
+                    onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
+                    onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
+                  />
+                  {/* Rating Badge */}
+                  {item.rating && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "1rem",
+                        right: "1rem",
+                        background: "var(--color-white)",
+                        padding: "0.5rem 1rem",
+                        borderRadius: "20px",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.3rem",
+                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                      }}
+                    >
+                      <span style={{ color: "#fbbf24", fontSize: "1rem" }}>★</span>
+                      <span style={{ fontWeight: "700", fontSize: "0.9375rem", color: "var(--color-black)" }}>
+                        {item.rating}
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Content Section */}
+                <div style={{ padding: "1.5rem" }}>
                   <div
                     style={{
-                      background: "var(--color-yellow)",
-                      color: "var(--color-black)",
-                      padding: "0.5rem 1rem",
-                      borderRadius: "20px",
-                      fontWeight: "700",
-                      fontSize: "1.125rem",
-                      marginLeft: "1rem",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "flex-start",
+                      marginBottom: "0.75rem",
                     }}
                   >
-                    ${item.price}
+                    <h3
+                      style={{
+                        fontFamily: "var(--font-serif)",
+                        fontSize: "1.5rem",
+                        fontWeight: "700",
+                        color: "var(--color-white)",
+                        flex: 1,
+                      }}
+                    >
+                      {item.name}
+                    </h3>
+                  </div>
+                  <p
+                    style={{
+                      color: "rgba(255, 255, 255, 0.85)",
+                      fontSize: "0.9375rem",
+                      lineHeight: "1.6",
+                      marginBottom: "1.25rem",
+                    }}
+                  >
+                    {item.description}
+                  </p>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div
+                      style={{
+                        background: "var(--color-yellow)",
+                        color: "var(--color-black)",
+                        padding: "0.5rem 1.25rem",
+                        borderRadius: "20px",
+                        fontWeight: "700",
+                        fontSize: "1.25rem",
+                      }}
+                    >
+                      ${item.price}
+                    </div>
+                    <button
+                      className="btn-primary"
+                      style={{
+                        padding: "0.75rem 1.5rem",
+                        fontSize: "0.9375rem",
+                      }}
+                    >
+                      Add to Order
+                    </button>
                   </div>
                 </div>
-                <p
-                  style={{
-                    color: "rgba(255, 255, 255, 0.85)",
-                    fontSize: "1rem",
-                    lineHeight: "1.6",
-                    marginBottom: "1.5rem",
-                  }}
-                >
-                  {item.description}
-                </p>
-                <button
-                  className="btn-primary"
-                  style={{
-                    width: "100%",
-                    padding: "0.875rem",
-                    fontSize: "0.9375rem",
-                  }}
-                >
-                  Add to Order
-                </button>
               </div>
             ))}
           </div>
