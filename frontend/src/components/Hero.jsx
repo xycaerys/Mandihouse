@@ -71,12 +71,9 @@ const Hero = () => {
         </p>
 
         <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap" }}>
-          <button className="btn-primary" style={{ fontSize: "1.125rem", padding: "1rem 2.5rem" }}>
-            Order Now
-          </button>
           <button
-            className="btn-secondary"
-            style={{ fontSize: "1.125rem", padding: "0.875rem 2.5rem" }}
+            className="btn-primary"
+            style={{ fontSize: "1.125rem", padding: "1rem 2.5rem" }}
             onClick={scrollToMenu}
           >
             View Menu
