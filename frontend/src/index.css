@@ -79,6 +79,52 @@ code {
     }
     body {
         @apply bg-background text-foreground;
+        overflow-x: hidden;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Ensure no horizontal scroll */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* General padding adjustments */
+    section {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Hero section adjustments */
+    #hero {
+        min-height: 100vh;
+        padding: 6rem 1rem 3rem !important;
+    }
+
+    /* Button adjustments */
+    .btn-primary, .btn-secondary {
+        padding: 0.75rem 1.5rem !important;
+        font-size: 0.9375rem !important;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Menu grid adjustments */
+    #menu > div {
+        padding: 1rem !important;
+    }
+
+    /* Extras section adjustments */
+    #extras > div {
+        padding: 1rem !important;
+    }
+
+    /* Image containers */
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
