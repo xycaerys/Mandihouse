@@ -33,13 +33,22 @@ const Footer = () => {
             </div>
             <p
               style={{
+                color: "rgba(255, 255, 255, 0.9)",
+                lineHeight: "1.7",
+                marginBottom: "0.5rem",
+                fontWeight: "600",
+              }}
+            >
+              Authentic Arabian cuisine in an elegant setting.
+            </p>
+            <p
+              style={{
                 color: "rgba(255, 255, 255, 0.7)",
                 lineHeight: "1.7",
                 marginBottom: "1.5rem",
               }}
             >
-              Bringing authentic Yemeni Mandi to your table with love, tradition, and the finest
-              ingredients.
+              Experience the true taste of Arabia.
             </p>
             <div style={{ display: "flex", gap: "1rem" }}>
               <a
