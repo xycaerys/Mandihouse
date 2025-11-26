@@ -148,6 +148,29 @@ const Contact = () => {
               >
                 {info.detail}
               </p>
+              {info.detail2 && (
+                <p
+                  style={{
+                    color: "rgba(255, 255, 255, 0.85)",
+                    fontSize: "1rem",
+                    marginTop: "0.25rem",
+                  }}
+                >
+                  {info.detail2}
+                </p>
+              )}
+              {info.detail3 && (
+                <p
+                  style={{
+                    color: "rgba(255, 215, 0, 0.9)",
+                    fontSize: "1rem",
+                    marginTop: "0.25rem",
+                    fontWeight: "600",
+                  }}
+                >
+                  {info.detail3}
+                </p>
+              )}
             </div>
           ))}
         </div>
