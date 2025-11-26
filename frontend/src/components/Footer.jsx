@@ -76,7 +76,9 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/mandihouserockdale/"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   width: "40px",
                   height: "40px",
