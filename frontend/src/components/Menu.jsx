@@ -7,8 +7,6 @@ const Menu = () => {
 
   const categories = [
     { id: "all", label: "All Items" },
-    { id: "signature", label: "Signature Mandi" },
-    { id: "specialties", label: "Specialties" },
     { id: "preorder", label: "Pre-Order" },
     { id: "extras", label: "Extras & Drinks" },
   ];
@@ -21,8 +19,6 @@ const Menu = () => {
         ...menuCategories.preOrderOnly,
       ];
     }
-    if (activeCategory === "signature") return menuCategories.signatureMandi;
-    if (activeCategory === "specialties") return menuCategories.specialties;
     if (activeCategory === "preorder") return menuCategories.preOrderOnly;
     return [];
   };
