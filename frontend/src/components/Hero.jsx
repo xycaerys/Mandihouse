@@ -112,20 +112,21 @@ const Hero = () => {
 
         <p
           style={{
-            fontSize: "1.125rem",
+            fontSize: "clamp(0.9375rem, 2vw, 1.125rem)",
             color: "rgba(255, 255, 255, 0.9)",
             maxWidth: "900px",
-            margin: "0 auto 3rem",
+            margin: "0 auto 2.5rem",
             lineHeight: "1.8",
+            padding: "0 1rem",
           }}
         >
           Experience the rich heritage of Arabian and Hyderabadi cuisine with every visit to Mandi House. Delicately crafted with fragrant basmati rice, slow-cooked meats, and a perfect blend of aromatic spices, our signature mandi dishes deliver authentic flavors rooted in the Middle East and inspired by Hyderabad's vibrant culinary traditions. Each plate is a journey inviting you to savor tradition, aroma, and hospitality in every bite.
         </p>
 
-        <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap", padding: "0 1rem" }}>
           <button
             className="btn-primary"
-            style={{ fontSize: "1.125rem", padding: "1rem 2.5rem" }}
+            style={{ fontSize: "1rem", padding: "1rem 2rem", minWidth: "200px" }}
             onClick={scrollToMenu}
           >
             View Menu
