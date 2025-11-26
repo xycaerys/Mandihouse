@@ -59,15 +59,14 @@ const Hero = () => {
 
         <p
           style={{
-            fontSize: "1.25rem",
+            fontSize: "1.125rem",
             color: "rgba(255, 255, 255, 0.9)",
-            maxWidth: "700px",
+            maxWidth: "900px",
             margin: "0 auto 3rem",
-            lineHeight: "1.7",
+            lineHeight: "1.8",
           }}
         >
-          Savor the rich traditions of Arabian cuisine with our signature Mandi dishes. Slow-cooked
-          to perfection, infused with aromatic spices that transport you to the heart of Yemen.
+          Experience the rich heritage of Arabian and Hyderabadi cuisine with every visit to Mandi House. Delicately crafted with fragrant basmati rice, slow-cooked meats, and a perfect blend of aromatic spices, our signature mandi dishes deliver authentic flavors rooted in the Middle East and inspired by Hyderabad's vibrant culinary traditions. Each plate is a journey inviting you to savor tradition, aroma, and hospitality in every bite.
         </p>
 
         <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap" }}>
