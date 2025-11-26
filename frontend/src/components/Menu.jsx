@@ -172,6 +172,7 @@ const Menu = () => {
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",
+                      objectPosition: "center",
                       transition: "transform 0.5s ease",
                     }}
                     onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
