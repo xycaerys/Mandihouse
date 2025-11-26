@@ -47,15 +47,21 @@ const Header = () => {
       >
         <div
           style={{
-            fontFamily: "var(--font-serif)",
-            fontSize: "2rem",
-            fontWeight: "700",
-            color: "var(--color-yellow)",
             cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
           }}
           onClick={() => scrollToSection("hero")}
         >
-          Al Mandi House
+          <img
+            src="https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/75ers0g1_ChatGPT%20Image%20Aug%2027%2C%202025%2C%2007_48_44%20PM.png"
+            alt="Mandi House Logo"
+            style={{
+              height: "60px",
+              width: "auto",
+              mixBlendMode: "multiply",
+            }}
+          />
         </div>
 
         {/* Desktop Navigation */}
