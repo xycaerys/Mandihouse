@@ -3,27 +3,27 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Ahmed Al-Mansoori",
-    role: "Food Enthusiast",
-    text: "The most authentic Mandi I've had outside Yemen! The meat is so tender and perfectly spiced. Their family platter is perfect for gatherings.",
+    name: "Mohamad I.",
+    role: "Customer",
+    text: "Very generous meal, beautiful taste. I recommend!",
     rating: 5,
   },
   {
-    name: "Sarah Johnson",
-    role: "Local Resident",
-    text: "Absolutely love their chicken mandi! The rice is aromatic and flavorful. Service is excellent and the portions are very generous.",
+    name: "Alex P.",
+    role: "Customer",
+    text: "LAMB MANDI WAS DELICIOUS AND JUICY",
     rating: 5,
   },
   {
-    name: "Omar Hassan",
-    role: "Regular Customer",
-    text: "Been coming here for years. The quality never disappoints. Their mutton mandi is my favorite - so tender it falls off the bone!",
+    name: "Ashraf Khan A.",
+    role: "Customer",
+    text: "Amazing food, fast delivery, fantastic packaging. Just love their food.",
     rating: 5,
   },
   {
-    name: "Lisa Chen",
-    role: "Food Blogger",
-    text: "Discovered this gem last month and I'm hooked! The mixed mandi plate is a must-try. Authentic flavors and reasonable prices.",
+    name: "Mustafa Ahmed ali",
+    role: "Customer",
+    text: "Really great food, I'd recommend everyone to visit this restaurant and taste the real Hyderabadi and Arabian cuisine",
     rating: 5,
   },
 ];
