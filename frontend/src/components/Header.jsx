@@ -98,21 +98,6 @@ const Header = () => {
             About
           </a>
           <a
-            onClick={() => scrollToSection("gallery")}
-            style={{
-              color: "var(--color-white)",
-              textDecoration: "none",
-              fontSize: "1rem",
-              fontWeight: "500",
-              cursor: "pointer",
-              transition: "color 0.2s ease",
-            }}
-            onMouseEnter={(e) => (e.target.style.color = "var(--color-yellow)")}
-            onMouseLeave={(e) => (e.target.style.color = "var(--color-white)")}
-          >
-            Gallery
-          </a>
-          <a
             onClick={() => scrollToSection("contact")}
             style={{
               color: "var(--color-white)",
