@@ -86,7 +86,6 @@ const Contact = () => {
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "2rem",
-            marginBottom: "4rem",
           }}
         >
           {contactInfo.map((info, index) => (
@@ -148,49 +147,6 @@ const Contact = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* CTA Section */}
-        <div
-          style={{
-            background: "linear-gradient(135deg, var(--color-green-light) 0%, var(--color-green) 100%)",
-            padding: "4rem 3rem",
-            borderRadius: "var(--border-radius-lg)",
-            textAlign: "center",
-            border: "2px solid var(--color-yellow)",
-          }}
-        >
-          <h3
-            style={{
-              fontFamily: "var(--font-serif)",
-              fontSize: "clamp(2rem, 4vw, 2.5rem)",
-              fontWeight: "700",
-              color: "var(--color-white)",
-              marginBottom: "1rem",
-            }}
-          >
-            Ready to Experience Authentic Mandi?
-          </h3>
-          <p
-            style={{
-              fontSize: "1.125rem",
-              color: "rgba(255, 255, 255, 0.9)",
-              marginBottom: "2rem",
-              maxWidth: "600px",
-              margin: "0 auto 2rem",
-            }}
-          >
-            Order now and taste the tradition. Fast delivery to your doorstep.
-          </p>
-          <button
-            className="btn-primary"
-            style={{
-              padding: "1.25rem 3rem",
-              fontSize: "1.125rem",
-            }}
-          >
-            Order Online Now
-          </button>
         </div>
       </div>
     </section>
