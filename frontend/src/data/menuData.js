@@ -81,7 +81,7 @@ export const menuCategories = {
       name: "Mutton Mandi Family Plate", 
       price: 90, 
       description: "Premium mutton family platter with aromatic rice. Serves 4-5 persons",
-      image: "https://images.pexels.com/photos/6275095/pexels-photo-6275095.jpeg",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/m4kcfzof_mutton%20mandi%20family%20plate.png",
       rating: 4.9
     },
     { 
