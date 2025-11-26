@@ -5,22 +5,25 @@ const contactInfo = [
   {
     icon: <MapPin size={24} />,
     title: "Visit Us",
-    detail: "123 Arabian Street, Downtown",
+    detail: "548 Princes Hwy, Rockdale NSW",
   },
   {
     icon: <Phone size={24} />,
     title: "Call Us",
-    detail: "+1 (555) 123-4567",
+    detail: "+61 416 775 785",
+    detail2: "Tel: 0279017587",
   },
   {
     icon: <Mail size={24} />,
     title: "Email Us",
-    detail: "hello@almandihouse.com",
+    detail: "mandihouserockdale@gmail.com",
   },
   {
     icon: <Clock size={24} />,
     title: "Opening Hours",
-    detail: "Daily: 11:00 AM - 11:00 PM",
+    detail: "Tue-Thu: 4:00 PM - 11:00 PM",
+    detail2: "Fri-Sun: 5:00 PM - 12:00 AM",
+    detail3: "Monday: Closed",
   },
 ];
 
