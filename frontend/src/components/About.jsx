@@ -80,30 +80,13 @@ const About = () => {
             <p
               style={{
                 fontSize: "1.125rem",
-                color: "rgba(255, 255, 255, 0.85)",
+                color: "rgba(255, 255, 255, 0.9)",
                 lineHeight: "1.8",
-                marginBottom: "1.5rem",
+                marginBottom: "0",
               }}
             >
-              Al Mandi House brings you the authentic taste of Yemen with our signature Mandi
-              dishes. For over two decades, we've been serving families the rich, aromatic flavors
-              of traditional Middle Eastern cuisine.
+              Experience the rich heritage of Arabian and Hyderabadi cuisine with every visit to Mandi House. Delicately crafted with fragrant basmati rice, slow-cooked meats, and a perfect blend of aromatic spices, our signature mandi dishes deliver authentic flavors rooted in the Middle East and inspired by Hyderabad's vibrant culinary traditions. Each plate is a journey—inviting you to savor tradition, aroma, and hospitality in every bite.
             </p>
-            <p
-              style={{
-                fontSize: "1.125rem",
-                color: "rgba(255, 255, 255, 0.85)",
-                lineHeight: "1.8",
-                marginBottom: "2rem",
-              }}
-            >
-              Every dish is prepared with care, using time-honored cooking methods and the finest
-              spices. Our Mandi is slow-cooked to perfection, ensuring tender meat and perfectly
-              seasoned rice that captures the essence of Arabian hospitality.
-            </p>
-            <button className="btn-primary" style={{ padding: "1rem 2rem" }}>
-              Learn More
-            </button>
           </div>
 
           {/* Right Content - Features */}
