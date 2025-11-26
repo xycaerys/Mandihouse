@@ -171,18 +171,6 @@ const Header = () => {
               About
             </a>
             <a
-              onClick={() => scrollToSection("gallery")}
-              style={{
-                color: "var(--color-white)",
-                textDecoration: "none",
-                fontSize: "1.125rem",
-                fontWeight: "500",
-                cursor: "pointer",
-              }}
-            >
-              Gallery
-            </a>
-            <a
               onClick={() => scrollToSection("contact")}
               style={{
                 color: "var(--color-white)",
