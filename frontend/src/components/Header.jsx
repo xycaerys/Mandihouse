@@ -118,7 +118,6 @@ const Header = () => {
           >
             Contact
           </a>
-          <button className="btn-primary">Order Now</button>
         </nav>
 
         {/* Mobile Menu Button */}
