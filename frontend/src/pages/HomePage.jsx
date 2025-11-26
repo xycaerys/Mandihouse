@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Menu from "../components/Menu";
+import ExtrasShowcase from "../components/ExtrasShowcase";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Header />
       <Hero />
       <Menu />
+      <ExtrasShowcase />
       <About />
       <Gallery />
       <Contact />
