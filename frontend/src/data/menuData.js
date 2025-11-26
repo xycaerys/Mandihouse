@@ -120,14 +120,14 @@ export const menuCategories = {
       name: "Mutton Leg Mandi", 
       price: 120, 
       description: "Whole mutton leg slow-cooked with aromatic spices. Pre-order required",
-      image: "https://images.pexels.com/photos/6275095/pexels-photo-6275095.jpeg",
+      preOrder: true,
       rating: 5.0
     },
     { 
       name: "Mutton Shoulder Mandi", 
       price: 110, 
       description: "Premium shoulder cut with traditional preparation. Pre-order required",
-      image: "https://images.pexels.com/photos/6275095/pexels-photo-6275095.jpeg",
+      preOrder: true,
       rating: 5.0
     },
   ],
