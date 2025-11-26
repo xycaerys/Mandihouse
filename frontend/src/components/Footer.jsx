@@ -183,6 +183,27 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Contact Info */}
+          <div>
+            <h4
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: "1.25rem",
+                fontWeight: "700",
+                marginBottom: "1.5rem",
+                color: "var(--color-yellow)",
+              }}
+            >
+              Contact Info
+            </h4>
+            <div style={{ color: "rgba(255, 255, 255, 0.7)", lineHeight: "1.8" }}>
+              <p style={{ marginBottom: "0.5rem" }}>548 Princes Hwy, Rockdale NSW</p>
+              <p style={{ marginBottom: "0.25rem" }}>+61 416 775 785</p>
+              <p style={{ marginBottom: "0.5rem" }}>Telephone: 0279017587</p>
+              <p>mandihouserockdale@gmail.com</p>
+            </div>
+          </div>
+
           {/* Opening Hours */}
           <div>
             <h4
@@ -197,10 +218,21 @@ const Footer = () => {
               Opening Hours
             </h4>
             <div style={{ color: "rgba(255, 255, 255, 0.7)", lineHeight: "1.8" }}>
-              <p>Monday - Friday: 11:00 AM - 11:00 PM</p>
-              <p>Saturday - Sunday: 10:00 AM - 12:00 AM</p>
-              <p style={{ marginTop: "1rem" }}>Phone: +1 (555) 123-4567</p>
-              <p>Email: hello@almandihouse.com</p>
+              <p style={{ marginBottom: "0.5rem" }}>
+                <strong style={{ color: "rgba(255, 255, 255, 0.9)" }}>Tuesday - Thursday</strong>
+                <br />
+                4:00 PM - 11:00 PM
+              </p>
+              <p style={{ marginBottom: "0.5rem" }}>
+                <strong style={{ color: "rgba(255, 255, 255, 0.9)" }}>Friday - Sunday</strong>
+                <br />
+                5:00 PM - 12:00 AM
+              </p>
+              <p>
+                <strong style={{ color: "var(--color-yellow)" }}>Monday</strong>
+                <br />
+                Closed
+              </p>
             </div>
           </div>
         </div>
