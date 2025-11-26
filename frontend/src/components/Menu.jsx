@@ -141,7 +141,7 @@ const Menu = () => {
                   background: "var(--color-green)",
                   borderRadius: "var(--border-radius-lg)",
                   overflow: "hidden",
-                  border: "1px solid rgba(255, 215, 0, 0.2)",
+                  border: item.preOrder ? "2px dashed var(--color-yellow)" : "1px solid rgba(255, 215, 0, 0.2)",
                   boxShadow: "var(--shadow-md)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease",
                   cursor: "pointer",
@@ -154,56 +154,76 @@ const Menu = () => {
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow = "var(--shadow-md)";
-                  e.currentTarget.style.borderColor = "rgba(255, 215, 0, 0.2)";
+                  e.currentTarget.style.borderColor = item.preOrder ? "var(--color-yellow)" : "rgba(255, 215, 0, 0.2)";
                 }}
               >
-                {/* Image Section */}
-                <div
-                  style={{
-                    position: "relative",
-                    height: "250px",
-                    overflow: "hidden",
-                  }}
-                >
-                  <img
-                    src={item.image}
-                    alt={item.name}
+                {/* Image Section - Only show if not pre-order */}
+                {!item.preOrder && (
+                  <div
                     style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                      objectPosition: "center",
-                      transition: "transform 0.5s ease",
+                      position: "relative",
+                      height: "250px",
+                      overflow: "hidden",
                     }}
-                    onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
-                    onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
-                  />
-                  {/* Rating Badge */}
-                  {item.rating && (
-                    <div
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
                       style={{
-                        position: "absolute",
-                        top: "1rem",
-                        right: "1rem",
-                        background: "var(--color-white)",
-                        padding: "0.5rem 1rem",
-                        borderRadius: "20px",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "0.3rem",
-                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center",
+                        transition: "transform 0.5s ease",
                       }}
-                    >
-                      <span style={{ color: "#fbbf24", fontSize: "1rem" }}>★</span>
-                      <span style={{ fontWeight: "700", fontSize: "0.9375rem", color: "var(--color-black)" }}>
-                        {item.rating}
-                      </span>
-                    </div>
-                  )}
-                </div>
+                      onMouseEnter={(e) => (e.target.style.transform = "scale(1.1)")}
+                      onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
+                    />
+                    {/* Rating Badge */}
+                    {item.rating && (
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: "1rem",
+                          right: "1rem",
+                          background: "var(--color-white)",
+                          padding: "0.5rem 1rem",
+                          borderRadius: "20px",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.3rem",
+                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                        }}
+                      >
+                        <span style={{ color: "#fbbf24", fontSize: "1rem" }}>★</span>
+                        <span style={{ fontWeight: "700", fontSize: "0.9375rem", color: "var(--color-black)" }}>
+                          {item.rating}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                )}
 
                 {/* Content Section */}
-                <div style={{ padding: "1.5rem" }}>
+                <div style={{ padding: item.preOrder ? "2.5rem 1.5rem" : "1.5rem" }}>
+                  {/* Pre-Order Badge */}
+                  {item.preOrder && (
+                    <div
+                      style={{
+                        display: "inline-block",
+                        background: "var(--color-yellow)",
+                        color: "var(--color-black)",
+                        padding: "0.5rem 1.25rem",
+                        borderRadius: "20px",
+                        fontWeight: "700",
+                        fontSize: "0.875rem",
+                        marginBottom: "1rem",
+                        letterSpacing: "0.05em",
+                      }}
+                    >
+                      PRE-ORDER
+                    </div>
+                  )}
                   <div
                     style={{
                       display: "flex",
@@ -223,6 +243,21 @@ const Menu = () => {
                     >
                       {item.name}
                     </h3>
+                    {!item.preOrder && item.rating && (
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.3rem",
+                          marginLeft: "1rem",
+                        }}
+                      >
+                        <span style={{ color: "#fbbf24", fontSize: "1.125rem" }}>★</span>
+                        <span style={{ fontWeight: "700", fontSize: "1rem", color: "var(--color-yellow)" }}>
+                          {item.rating}
+                        </span>
+                      </div>
+                    )}
                   </div>
                   <p
                     style={{
@@ -237,7 +272,7 @@ const Menu = () => {
                   <div
                     style={{
                       display: "flex",
-                      justifyContent: "space-between",
+                      justifyContent: item.preOrder ? "center" : "flex-start",
                       alignItems: "center",
                     }}
                   >
@@ -253,15 +288,6 @@ const Menu = () => {
                     >
                       ${item.price}
                     </div>
-                    <button
-                      className="btn-primary"
-                      style={{
-                        padding: "0.75rem 1.5rem",
-                        fontSize: "0.9375rem",
-                      }}
-                    >
-                      Add to Order
-                    </button>
                   </div>
                 </div>
               </div>
