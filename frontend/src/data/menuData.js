@@ -4,7 +4,7 @@ export const menuCategories = {
       name: "Chicken Mandi Single", 
       price: 24, 
       description: "Tender chicken marinated with aromatic spices, served on fragrant saffron rice. Serves 1 person",
-      image: "https://images.unsplash.com/photo-1603496987674-79600a000f55?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxtYW5kaSUyMHJpY2V8ZW58MHx8fHwxNzY0MTcxNTM4fDA&ixlib=rb-4.1.0&q=85",
+      image: "https://customer-assets.emergentagent.com/job_gourmet-mandi/artifacts/rn932f8f_chicken%20mandi%20single.png",
       rating: 4.9
     },
     { 
