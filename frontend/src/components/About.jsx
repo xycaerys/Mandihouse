@@ -93,8 +93,8 @@ const About = () => {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(2, 1fr)",
-              gap: "2rem",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))",
+              gap: "1.5rem",
             }}
           >
             {features.map((feature, index) => (
