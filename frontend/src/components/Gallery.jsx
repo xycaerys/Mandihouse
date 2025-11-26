@@ -39,7 +39,7 @@ const Gallery = () => {
       id="gallery"
       style={{
         padding: "6rem 2rem",
-        background: "var(--color-primary)",
+        background: "linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark))",
       }}
     >
       <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
@@ -49,14 +49,14 @@ const Gallery = () => {
             style={{
               display: "inline-block",
               padding: "0.5rem 1.5rem",
-              background: "rgba(74, 124, 89, 0.1)",
+              background: "rgba(255, 215, 0, 0.15)",
               borderRadius: "30px",
               marginBottom: "1rem",
             }}
           >
             <span
               style={{
-                color: "var(--color-green)",
+                color: "var(--color-yellow)",
                 fontSize: "0.875rem",
                 fontWeight: "600",
                 letterSpacing: "0.1em",
@@ -71,7 +71,7 @@ const Gallery = () => {
               fontFamily: "var(--font-serif)",
               fontSize: "clamp(2.5rem, 5vw, 3.5rem)",
               fontWeight: "700",
-              color: "var(--color-black)",
+              color: "var(--color-white)",
               marginBottom: "1rem",
             }}
           >
@@ -80,7 +80,7 @@ const Gallery = () => {
           <p
             style={{
               fontSize: "1.125rem",
-              color: "var(--color-gray-900)",
+              color: "rgba(255, 255, 255, 0.8)",
               maxWidth: "600px",
               margin: "0 auto",
               lineHeight: "1.7",
@@ -107,12 +107,14 @@ const Gallery = () => {
                 borderRadius: "var(--border-radius-lg)",
                 overflow: "hidden",
                 cursor: "pointer",
+                border: "2px solid rgba(255, 215, 0, 0.2)",
                 boxShadow: "var(--shadow-md)",
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                transition: "transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-5px)";
-                e.currentTarget.style.boxShadow = "0 20px 30px rgba(0, 0, 0, 0.15)";
+                e.currentTarget.style.transform = "translateY(-8px)";
+                e.currentTarget.style.boxShadow = "0 20px 40px rgba(255, 215, 0, 0.3)";
+                e.currentTarget.style.borderColor = "var(--color-yellow)";
                 const overlay = e.currentTarget.querySelector('.gallery-overlay');
                 if (overlay) overlay.style.opacity = "1";
                 const img = e.currentTarget.querySelector('img');
@@ -121,6 +123,7 @@ const Gallery = () => {
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "var(--shadow-md)";
+                e.currentTarget.style.borderColor = "rgba(255, 215, 0, 0.2)";
                 const overlay = e.currentTarget.querySelector('.gallery-overlay');
                 if (overlay) overlay.style.opacity = "0";
                 const img = e.currentTarget.querySelector('img');
@@ -144,7 +147,7 @@ const Gallery = () => {
                   bottom: 0,
                   left: 0,
                   right: 0,
-                  background: "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
+                  background: "linear-gradient(to top, rgba(0,0,0,0.9), transparent)",
                   padding: "2rem 1.5rem 1.5rem",
                   opacity: "0",
                   transition: "opacity 0.3s ease",
@@ -155,7 +158,7 @@ const Gallery = () => {
                     fontFamily: "var(--font-serif)",
                     fontSize: "1.5rem",
                     fontWeight: "700",
-                    color: "var(--color-white)",
+                    color: "var(--color-yellow)",
                   }}
                 >
                   {image.caption}
