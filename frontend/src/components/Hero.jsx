@@ -179,6 +179,7 @@ const Hero = () => {
           transform: "translateX(-50%)",
           cursor: "pointer",
           animation: "bounce 2s infinite",
+          zIndex: 2,
         }}
       >
         <ChevronDown size={32} color="var(--color-yellow)" opacity={0.7} />
